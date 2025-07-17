@@ -1,0 +1,96 @@
+/* Variáveis para facilitar a personalização de cores */
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-primaria-escura: #084298;
+    --cor-primaria-clara: #f0f8ff;
+    --cor-branco: #ffffff;
+
+    --gradiente-primario: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-escura));
+    --gradiente-claro: linear-gradient(135deg, var(--cor-primaria-clara), var(--cor-branco));
+}
+
+.hero-section {
+    background: var(--gradiente-claro);
+    padding: 5rem 0;
+}
+
+.card-hover-effect {
+    transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.text-highlight {
+    color: var(--cor-primaria);
+}
+
+.icon-highlight {
+    color: var(--cor-primaria);
+}
+
+.btn-highlight {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.btn-highlight:hover {
+    background-color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria-escura);
+    color: var(--cor-branco);
+}
+
+.btn-highlight:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-highlight:active {
+    background-color: var(--cor-primaria-escura) !important;
+    border-color: var(--cor-primaria-escura) !important;
+    color: var(--cor-branco) !important;
+}
+
+.btn-highlight:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.bg-highlight {
+    background: var(--gradiente-primario);
+}
+
+.badge-highlight {
+    background: var(--cor-primaria);
+    background-color: rgba(102, 16, 242, 0.1);
+}
+
+.border-highlight {
+    border: 1px solid var(--cor-primaria);
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.tool-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
